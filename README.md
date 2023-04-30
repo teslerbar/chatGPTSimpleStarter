@@ -35,7 +35,7 @@ yarn install
 1. Make a copy of the example environment variables file
 
 ```bash
-cp .env.example .env
+cp .env.example .env.local
 ```
 
 1. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file
