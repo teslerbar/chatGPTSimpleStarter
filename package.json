@@ -1,7 +1,7 @@
 {
   "name": "openai-gpt3-node-starter",
   "version": "1.0.1",
-  "author": "Bar Tesler",
+  "author": "Gannon Hall",
   "license": "MIT",
   "private": false,
   "description": "OpenAI GPT-3 Node Starter Project",
