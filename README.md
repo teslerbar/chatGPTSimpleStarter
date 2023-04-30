@@ -2,20 +2,21 @@
 
 This is a Typescript starter project for using the Open AI API to build a Node app.
 
-In this example app, you enter the name of a product and it outputs a product review, formatted in a very specific way in markdown. You can use this as a starting point to build purpose-built generative API functionality.
+This is a dead simple demo app with an example of how we can use ChatGPT with LangChain using Next api routes.
+
+http://localhost:3000/ai - will generate a simple response a response using a defined template. Use this as a starting point to create your web app.
 
 Technologies used:
 
-- [OpenAI API](https://openai.com/api/)
-- [Node.js](https://nodejs.org/en/)
+- [LangChain](https://js.langchain.com/docs/)
 - [Next.js](https://nextjs.org/)
+- [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org/)
 - [TailwindCSS](https://tailwindcss.com/)
-- [Highlight.js](https://highlightjs.org/)
 
 ## Setup
 
-1. If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/)
+1. You'll need Node >18 installed.
 
 1. Clone this repository
 
@@ -23,12 +24,12 @@ Technologies used:
 
 ```bash
 cd openai-api-next-starter
-```  
+```
 
 1. Install the requirements
 
 ```bash
-npm install
+yarn install
 ```
 
 1. Make a copy of the example environment variables file
@@ -42,13 +43,7 @@ cp .env.example .env
 1. Run the app
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 You should now be able to access the app at [http://localhost:3000](http://localhost:3000). Happy hacking.
-
-## Deployment
-
-I've run this successfully on Vercel and I'd recommend them for any Next.js (they invented Next and their DX is the best!)
-
-Included in the repo is a vercel.json file. You need this to set a higher serverless function timeout since the Open AI API takes about 20-30 seconds to compute. Please note that Hobby accounts will always timeout at 10s so you need to upgrade to a pro account for this to work. Totally worth it.

@@ -16,5 +16,5 @@ export default async function (req, res) {
   // The result is an object with a `text` property.
   console.log({ resA });
 
-  return res.status(200).json(resA);
+  return res.status(200).json(resA.text);
 }
